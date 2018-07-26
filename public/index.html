@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chatzim</title>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/socket.io.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="container-sidebar">
+      <div class="logo"><img src="/chat.png" style="width:40px;height:auto"><span style="left:10px;position:relative;top:-16px;">chatzim</span></div>
+      <div class="list-users">
+        <ul></ul>
+        <!-- <i class="loading-sidebar mdi mdi-settings mdi-spin mdi-24px"></i> -->
+      </div>
+    </div>
+    <div class="container-chat">
+      <div class="header">Usuários online: <span></span></div>
+      <div class="middle">
+        <div class="messages"></div>
+      </div>
+      <div class="footer">
+        <form id="chat" class="form-chat" autocomplete="off">
+            <input type="hidden" id="id_pessoa">
+            <input type="text" name="username" placeholder="Digite seu usuário">
+            <input type="text" name="message" placeholder="Digite sua mensagens">
+            <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/client.js"></script>
+</html>
